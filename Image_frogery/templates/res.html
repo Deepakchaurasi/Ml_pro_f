@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!-- <link rel="stylesheet" href="regist.css"> -->
+     <link rel="stylesheet" href="{{ url_for('static', filename='regist.css') }}">
+</head>
+<body>
+    <nav class="nv">
+        <div>
+
+            <li><a href="/" target="_blank">Home</a></li>
+            <li><a href="/about" target="_blank">About</a></li>
+        </div>
+      
+        <div>
+
+            <li><a href="/loin" target="_blank">Login</a></li>
+            <li><a href="/res" target="_blank">Register</a></li>
+        </div>
+    </nav><br><hr>
+    <div class="main">
+        <nav>
+
+            <caption>Registeration</caption>
+        </nav><hr>
+        <form action="/loin">
+            <div>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+                
+            </div>
+            <div>
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+                <label for="city">City</label>
+                <select name="cityname" id="city" required>
+                    <option value="delhi">Delhi</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="kolkata">Kolkata</option>
+                    <option value="chennai">Chennai</option>
+                </select><br><br>
+                <label for="state">State</label>
+               <select name="statename" id="state">
+                    <option value="delhi">Delhi</option>
+                    <option value="maharashtra">Maharashtra</option>
+                    <option value="west bengal">West Bengal</option>
+                    <option value="tamil nadu">Tamil Nadu</option>
+                </select><br><br>
+            </div><br>
+            <!-- <input type="submit" value="Register"> -->
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+   background: linear-gradient(to right, rgb(1, 1, 38), #16097d, #070117);
+    flex-direction: column;
+    color: white;
+}
+.nv{
+    width: 100%;
+    background: linear-gradient(to right, rgb(3, 3, 80), #321ecc, #270682);
+    color:white;
+    /* margin-bottom: 10px; */
+    display: flex;
+    justify-content: space-around;
+}
+.nv div{
+    padding: 20px;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.nv div a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nv div a:hover{
+    color:rgb(87, 135, 4);
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+
+}
+.main nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    font-size: larger;
+    font-weight: bold;
+  margin-bottom: 10px;
+  padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main{
+    width: 60%;
+    height: 60%;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    /* font-size: larger; */
+    /* font-weight: bolder; */
+    align-items: center;
+    /* background-color: #f0f0f0; */
+}
+.main form{
+    border: 2px solid black;
+    padding: 20px;
+    column-gap: normal;
+    /* background:linear-gradient(to right rgb(43, 8, 114) rgb(40, 17, 173) rgb(6, 26, 114) ); */
+    columns: 2;
+    column-count: 2;
+    justify-content: space-around;
+    /* background-color: rgb(3, 3, 112); */
+    background: transparent;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    align-items: center;
+
+}
+.main form:hover{
+    transform: scale(1.02);
+    transition: transform 0.9s ease ease-in;
+}
+.main form input{
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 30%;
+    border: 1px solid #ccc;
+    box-shadow: 10px 10px 10px;
+    border-radius: 5px;
+}
+.main form button{
+    padding: 10px 20px;
+    background-color: rgb(70, 2, 99);
+    /* color: white; */
+    border: none;
+  box-shadow: 10px 10px 10px;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.main form div{
+    justify-content: space-around;
+    width: 500px;
+    flex-wrap: wrap;
+}
+.main form div label{
+    display: block;
+    font-weight: bold;
+}
+.main form #city{
+    display: block;
+    box-shadow: 10px 10px 10px;
+    width: 30%;
+    height: 30px;
+}
+.main form #state{
+     display: block;
+     box-shadow: 10px 10px 10px;
+    height: 30px;
+    width: 30%;
+}
